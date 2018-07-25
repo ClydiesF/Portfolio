@@ -1,0 +1,9 @@
+.header {
+  height: 75vh;
+  background-image: linear-gradient(to bottom right, #3f92bf, #3fbfb2);
+  font-weight: 600;
+  letter-spacing: 2px;
+  clip-path: polygon(0 0, 100% 0, 100% 65%, 50% 75%, 0 65%); }
+  .header__title {
+    color: #728c89;
+    text-align: center; }
