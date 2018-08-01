@@ -35,7 +35,7 @@ html {
   font-size: 10px; }
 
 .header {
-  z-index: 56;
+  z-index: 2;
   height: 55vh;
   background-image: linear-gradient(to bottom right, rgba(63, 146, 191, 0.6), rgba(63, 191, 178, 0.6)), url(../Img/osman-rana-267042-unsplash.jpg);
   background-size: cover;
@@ -91,8 +91,9 @@ html {
         filter: drop-shadow(5px 5px 5px #222); }
 
 .about {
-  height: 45vh;
-  z-index: 55;
+  z-index: 1;
+  height: 35rem;
+  position: relative;
   background-image: linear-gradient(to right bottom, #96c4c4, #a6a6a6);
   padding: 80px 15px;
   clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 95%, 0 85%);
@@ -133,8 +134,40 @@ html {
           left: 16rem; }
 
 .skills {
-  z-index: 0;
-  background-image: linear-gradient(to right bottom, #c4c4c4, #c4c4c4);
-  padding: 80px 15px;
+  height: 45rem;
+  background-color: greenyellow;
   clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 95%, 0 85%);
-  transform: translateY(-18rem); }
+  transform: translateY(-15rem);
+  z-index: 0;
+  position: relative; }
+  .skills__title {
+    text-transform: uppercase;
+    display: inline-block;
+    margin-top: 3rem;
+    margin-left: 1rem; }
+  .skills__gallery {
+    margin: 4rem;
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    height: 18rem; }
+    .skills__gallery-card {
+      width: 22%;
+      border-radius: .5rem;
+      background-color: #385c54; }
+
+.projects {
+  height: 35rem;
+  background-color: #2fbdff;
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 95%, 0 85%);
+  transform: translateY(-15rem);
+  z-index: 0;
+  position: relative; }
+
+.footer {
+  height: 25rem;
+  background-color: #30463f;
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 95%, 0 85%);
+  transform: translateY(-15rem);
+  z-index: 0;
+  position: relative; }
