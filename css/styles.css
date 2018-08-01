@@ -8,13 +8,34 @@
       transform: scale(5), translateY(1rem);
       box-shadow: .5rem 1rem; }
 
+@keyframes fadein {
+  from {
+    opacity: 0;
+    transform: translateY(-3rem); }
+  to {
+    opacity: 1; } }
+
+@keyframes slidefromleft {
+  from {
+    opacity: 0;
+    transform: translateX(-3rem); }
+  to {
+    opacity: 1; } }
+
+@keyframes slidefromright {
+  from {
+    opacity: 0;
+    transform: translatex(3rem); }
+  to {
+    opacity: 1; } }
+
 html {
   margin-right: .5rem;
   margin-left: .5rem;
   font-size: 10px; }
 
 .header {
-  z-index: 2;
+  z-index: 56;
   height: 55vh;
   background-image: linear-gradient(to bottom right, rgba(63, 146, 191, 0.6), rgba(63, 191, 178, 0.6)), url(../Img/osman-rana-267042-unsplash.jpg);
   background-size: cover;
@@ -27,15 +48,52 @@ html {
     text-align: center;
     font-weight: 60rem;
     letter-spacing: .2rem;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    font-size: 5rem;
+    text-transform: uppercase;
+    animation-name: fadein;
+    animation-duration: 3s;
+    animation-fill-mode: backwards; }
   .header__subtitle {
-    font-size: 2rem;
-    text-transform: uppercase; }
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    text-align: center; }
+    .header__subtitle--web {
+      animation-name: slidefromleft;
+      animation-duration: 5s;
+      animation-fill-mode: backwards;
+      animation-delay: 4s;
+      animation-fill-mode: backwards; }
+    .header__subtitle--designer {
+      animation-name: slidefromright;
+      animation-duration: 5s;
+      animation-fill-mode: backwards;
+      animation-delay: 4s;
+      animation-fill-mode: backwards; }
+    .header__subtitle--blogger {
+      animation-name: slidefromleft;
+      animation-duration: 5s;
+      animation-fill-mode: backwards;
+      animation-delay: 4s;
+      animation-fill-mode: backwards; }
+  .header__text {
+    text-align: center; }
+  .header__gallery {
+    text-align: center;
+    transform: all 5s; }
+    .header__gallery-icons {
+      text-align: center;
+      height: 3rem;
+      margin: 1rem; }
+      .header__gallery-icons:hover {
+        transform: translateY(-0.4rem);
+        -webkit-filter: drop-shadow(5px 5px 5px #222);
+        filter: drop-shadow(5px 5px 5px #222); }
 
 .about {
   height: 45vh;
-  z-index: 1;
-  background-image: linear-gradient(to right bottom, #c4c4c4, #a6a6a6);
+  z-index: 55;
+  background-image: linear-gradient(to right bottom, #96c4c4, #a6a6a6);
   padding: 80px 15px;
   clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 95%, 0 85%);
   transform: translateY(-80px); }
@@ -48,10 +106,35 @@ html {
   .about__right {
     float: left;
     width: 50%; }
-    .about__right-gallery .about__image {
-      height: 4rem;
-      border: solid black .15rem;
-      padding: .35rem;
-      border-radius: .5rem; }
-      .about__right-gallery .about__image:hover {
-        transform: rotate(180deg); }
+    .about__right-gallery {
+      position: relative; }
+      .about__right-gallery .about__image {
+        height: 4rem;
+        border: solid black .15rem;
+        padding: .35rem;
+        border-radius: .5rem; }
+        .about__right-gallery .about__image:hover {
+          transform: rotate(180deg); }
+        .about__right-gallery .about__image--gym {
+          position: absolute;
+          top: 3rem;
+          left: 4rem; }
+        .about__right-gallery .about__image--game {
+          position: absolute;
+          top: 6rem;
+          left: 8rem; }
+        .about__right-gallery .about__image--draw {
+          position: absolute;
+          top: 9rem;
+          left: 12rem; }
+        .about__right-gallery .about__image--tv {
+          position: absolute;
+          top: 12rem;
+          left: 16rem; }
+
+.skills {
+  z-index: 0;
+  background-image: linear-gradient(to right bottom, #c4c4c4, #c4c4c4);
+  padding: 80px 15px;
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 95%, 0 85%);
+  transform: translateY(-18rem); }
