@@ -8,6 +8,11 @@
       transform: scale(5), translateY(1rem);
       box-shadow: .5rem 1rem; }
 
+hr {
+  background-color: lightgray;
+  border: solid 2px whitesmoke;
+  transform: rotate(1.5deg); }
+
 @keyframes fadein {
   from {
     opacity: 0;
@@ -52,7 +57,7 @@ html {
     font-size: 5rem;
     text-transform: uppercase;
     animation-name: fadein;
-    animation-duration: 3s;
+    animation-duration: 2s;
     animation-fill-mode: backwards; }
   .header__subtitle {
     font-size: 2.5rem;
@@ -60,21 +65,21 @@ html {
     text-align: center; }
     .header__subtitle--web {
       animation-name: slidefromleft;
-      animation-duration: 5s;
+      animation-duration: 2s;
       animation-fill-mode: backwards;
-      animation-delay: 4s;
+      animation-delay: 2.5s;
       animation-fill-mode: backwards; }
     .header__subtitle--designer {
       animation-name: slidefromright;
-      animation-duration: 5s;
+      animation-duration: 2s;
       animation-fill-mode: backwards;
-      animation-delay: 4s;
+      animation-delay: 2.5s;
       animation-fill-mode: backwards; }
     .header__subtitle--blogger {
       animation-name: slidefromleft;
-      animation-duration: 5s;
+      animation-duration: 2s;
       animation-fill-mode: backwards;
-      animation-delay: 4s;
+      animation-delay: 2.5s;
       animation-fill-mode: backwards; }
   .header__text {
     text-align: center; }
@@ -103,6 +108,7 @@ html {
     width: 50%;
     padding-right: 2rem; }
     .about__lefttitle {
+      transform: rotate(4deg);
       text-transform: uppercase; }
   .about__right {
     float: left;
@@ -144,7 +150,8 @@ html {
     text-transform: uppercase;
     display: inline-block;
     margin-top: 3rem;
-    margin-left: 1rem; }
+    margin-left: 1rem;
+    transform: rotate(4deg); }
   .skills__gallery {
     margin: 4rem;
     display: flex;
@@ -152,12 +159,35 @@ html {
     justify-content: space-around;
     height: 18rem; }
     .skills__gallery-card {
-      width: 22%;
-      border-radius: .5rem;
-      background-color: #385c54; }
+      width: 10%;
+      border-radius: 5%;
+      background-size: contain;
+      border: solid 1px grey;
+      background-repeat: no-repeat;
+      transition: all .5s; }
+      .skills__gallery-card:hover {
+        transform: translateY(-1rem);
+        box-shadow: 5px 10px #888888; }
+      .skills__gallery-card:active {
+        transform: translateY(0);
+        box-shadow: none; }
+      .skills__gallery-card--html {
+        background-image: url(/Img/2000px-HTML5_logo_and_wordmark.svg.png); }
+      .skills__gallery-card--css {
+        background-image: url(/Img/CSS3_logo_and_wordmark.svg.png); }
+      .skills__gallery-card--javascript {
+        background-image: url(/Img/javascript-logo.png); }
+      .skills__gallery-card--gulp {
+        background-image: url(/Img/gulp-logo.png); }
+      .skills__gallery-card--bootstrap {
+        background-image: url(/Img/bootstrap-logo-png-assets-img-logo-bootstrap-png-200.png); }
+      .skills__gallery-card--git {
+        background-image: url(/Img//git-logo1-348x350-c.png); }
+      .skills__gallery-card--sass {
+        background-image: url(/Img/sass-logo.png); }
 
 .projects {
-  height: 35rem;
+  height: 45rem;
   background-color: #2fbdff;
   clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 95%, 0 85%);
   transform: translateY(-15rem);
@@ -170,4 +200,18 @@ html {
   clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 95%, 0 85%);
   transform: translateY(-15rem);
   z-index: 0;
-  position: relative; }
+  position: relative;
+  padding: 80px 15px;
+  display: flex;
+  justify-content: space-between; }
+  .footer__left {
+    width: 50%; }
+    .footer__left-heading {
+      text-transform: uppercase;
+      margin-left: 1rem;
+      color: white;
+      font-size: 3rem;
+      transform: rotate(1.5deg); }
+    .footer__left-content p {
+      color: whitesmoke;
+      transform: rotate(1.5deg); }
