@@ -1,6 +1,6 @@
 .btn {
   text-decoration: none;
-  background-color: darkgray;
+  background-color: darkslategray;
   border-radius: .5rem; }
   .btn__p {
     color: orange; }
@@ -12,6 +12,12 @@ hr {
   background-color: lightgray;
   border: solid 2px whitesmoke;
   transform: rotate(1.5deg); }
+
+p {
+  font-size: 1.2rem; }
+
+.footer-icons {
+  width: 2rem; }
 
 @keyframes fadein {
   from {
@@ -40,7 +46,7 @@ html {
   font-size: 10px; }
 
 .header {
-  z-index: 2;
+  z-index: 5;
   height: 55vh;
   background-image: linear-gradient(to bottom right, rgba(63, 146, 191, 0.6), rgba(63, 191, 178, 0.6)), url(../Img/osman-rana-267042-unsplash.jpg);
   background-size: cover;
@@ -85,7 +91,7 @@ html {
     text-align: center; }
   .header__gallery {
     text-align: center;
-    transform: all 5s; }
+    transition: all 5s; }
     .header__gallery-icons {
       text-align: center;
       height: 3rem;
@@ -96,7 +102,7 @@ html {
         filter: drop-shadow(5px 5px 5px #222); }
 
 .about {
-  z-index: 1;
+  z-index: 4;
   height: 35rem;
   position: relative;
   background-image: linear-gradient(to right bottom, #96c4c4, #a6a6a6);
@@ -120,31 +126,25 @@ html {
         border: solid black .15rem;
         padding: .35rem;
         border-radius: .5rem; }
+        .about__right-gallery .about__image-master {
+          width: 20rem;
+          height: 20rem;
+          background-color: goldenrod;
+          border: solid 1px black;
+          border-radius: 50%;
+          shape-outside: circle(50%);
+          shape-image-threshold: .5;
+          float: left;
+          margin-right: 1.2rem; }
         .about__right-gallery .about__image:hover {
           transform: rotate(180deg); }
-        .about__right-gallery .about__image--gym {
-          position: absolute;
-          top: 3rem;
-          left: 4rem; }
-        .about__right-gallery .about__image--game {
-          position: absolute;
-          top: 6rem;
-          left: 8rem; }
-        .about__right-gallery .about__image--draw {
-          position: absolute;
-          top: 9rem;
-          left: 12rem; }
-        .about__right-gallery .about__image--tv {
-          position: absolute;
-          top: 12rem;
-          left: 16rem; }
 
 .skills {
   height: 45rem;
   background-color: greenyellow;
   clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 95%, 0 85%);
   transform: translateY(-15rem);
-  z-index: 0;
+  z-index: 3;
   position: relative; }
   .skills__title {
     text-transform: uppercase;
@@ -190,16 +190,35 @@ html {
   height: 45rem;
   background-color: #2fbdff;
   clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 95%, 0 85%);
-  transform: translateY(-15rem);
-  z-index: 0;
-  position: relative; }
+  transform: translateY(-25rem);
+  z-index: 2;
+  position: relative;
+  padding-top: 15rem; }
+  .projects__gallery {
+    display: flex;
+    justify-content: space-around; }
+    .projects__galleryTiles {
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      width: 20rem;
+      height: 16rem;
+      border-radius: .5rem;
+      background-color: red; }
+      .projects__galleryTilesText {
+        display: block;
+        color: white;
+        font-size: 5rem; }
+        .projects__galleryTilesText:hover {
+          color: black;
+          display: none; }
 
 .footer {
   height: 25rem;
   background-color: #30463f;
   clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 95%, 0 85%);
-  transform: translateY(-15rem);
-  z-index: 0;
+  transform: translateY(-33rem);
+  z-index: 1;
   position: relative;
   padding: 80px 15px;
   display: flex;
