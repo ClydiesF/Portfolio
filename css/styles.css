@@ -19,6 +19,77 @@ p {
 .footer-icons {
   width: 2rem; }
 
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.header__content {
+  background-color: goldenrod;
+  display: flex;
+  flex-direction: column; }
+
+.header__gallery {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem; }
+
+.subtitle__content {
+  display: flex; }
+
+.tech-skills {
+  background-color: aqua;
+  height: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .tech-skills__title {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 3rem; }
+  .tech-skills__paragraph {
+    background-color: cornflowerblue;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .tech-skills__paragraph-p {
+      font-size: 1.8rem;
+      text-align: center;
+      width: 90rem;
+      font-weight: 200; }
+  .tech-skills__gallery-section {
+    background-color: fuchsia;
+    height: 100rem;
+    padding-top: 5rem;
+    display: flex;
+    justify-content: center; }
+    .tech-skills__gallery-section-container {
+      max-width: 110rem;
+      display: flex;
+      justify-content: center;
+      background-color: red;
+      flex-wrap: wrap; }
+    .tech-skills__gallery-section-box {
+      width: 25rem;
+      height: 25rem;
+      background-color: green;
+      margin: 1rem;
+      margin-bottom: 0px;
+      border-radius: 8px; }
+
+.footer {
+  background-color: grey;
+  height: 50rem;
+  display: flex;
+  justify-content: center; }
+  .footer__content {
+    margin-top: 5rem;
+    background-color: lightcoral;
+    height: 20rem;
+    width: 80rem;
+    flex: center; }
+
 @keyframes fadein {
   from {
     opacity: 0;
@@ -45,15 +116,18 @@ html {
   margin-left: .5rem;
   font-size: 10px; }
 
+.resume {
+  width: 3rem;
+  height: 3rem;
+  background-color: bisque; }
+
 .header {
-  z-index: 5;
-  height: 55vh;
+  height: 65vh;
   background-image: linear-gradient(to bottom right, rgba(63, 146, 191, 0.6), rgba(63, 191, 178, 0.6)), url(../Img/osman-rana-267042-unsplash.jpg);
   background-size: cover;
   background-position: top;
   padding: 10px 15px;
-  position: relative;
-  clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 95%, 0 85%); }
+  position: relative; }
   .header__title {
     color: #728c89;
     text-align: center;
@@ -64,11 +138,15 @@ html {
     text-transform: uppercase;
     animation-name: fadein;
     animation-duration: 2s;
-    animation-fill-mode: backwards; }
+    animation-fill-mode: backwards;
+    margin-bottom: 3rem; }
+  .header .subtitle__content {
+    margin-bottom: 3rem; }
   .header__subtitle {
     font-size: 2.5rem;
     text-transform: uppercase;
-    text-align: center; }
+    text-align: center;
+    letter-spacing: .2rem; }
     .header__subtitle--web {
       animation-name: slidefromleft;
       animation-duration: 2s;
@@ -91,146 +169,26 @@ html {
     text-align: center; }
   .header__gallery {
     text-align: center;
-    transition: all 5s; }
+    transition: all 5s;
+    display: flex; }
     .header__gallery-icons {
       text-align: center;
       height: 3rem;
+      width: 3rem;
       margin: 1rem; }
       .header__gallery-icons:hover {
         transform: translateY(-0.4rem);
         -webkit-filter: drop-shadow(5px 5px 5px #222);
         filter: drop-shadow(5px 5px 5px #222); }
 
-.about {
-  z-index: 4;
-  height: 35rem;
-  position: relative;
-  background-image: linear-gradient(to right bottom, #96c4c4, #a6a6a6);
-  padding: 80px 15px;
-  clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 95%, 0 85%);
-  transform: translateY(-80px); }
-  .about__left {
-    float: left;
-    width: 50%;
-    padding-right: 2rem; }
-    .about__lefttitle {
-      transform: rotate(4deg);
-      text-transform: uppercase; }
-  .about__right {
-    float: left;
-    width: 50%; }
-    .about__right-gallery {
-      position: relative; }
-      .about__right-gallery .about__image {
-        height: 4rem;
-        border: solid black .15rem;
-        padding: .35rem;
-        border-radius: .5rem; }
-        .about__right-gallery .about__image-master {
-          width: 20rem;
-          height: 20rem;
-          background-color: goldenrod;
-          border: solid 1px black;
-          border-radius: 50%;
-          shape-outside: circle(50%);
-          shape-image-threshold: .5;
-          float: left;
-          margin-right: 1.2rem; }
-        .about__right-gallery .about__image:hover {
-          transform: rotate(180deg); }
-
-.skills {
-  height: 45rem;
-  background-color: greenyellow;
-  clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 95%, 0 85%);
-  transform: translateY(-15rem);
-  z-index: 3;
-  position: relative; }
-  .skills__title {
-    text-transform: uppercase;
-    display: inline-block;
-    margin-top: 3rem;
-    margin-left: 1rem;
-    transform: rotate(4deg); }
-  .skills__gallery {
-    margin: 4rem;
-    display: flex;
-    align-content: center;
-    justify-content: space-around;
-    height: 18rem; }
-    .skills__gallery-card {
-      width: 10%;
-      border-radius: 5%;
-      background-size: contain;
-      border: solid 1px grey;
-      background-repeat: no-repeat;
-      transition: all .5s; }
-      .skills__gallery-card:hover {
-        transform: translateY(-1rem);
-        box-shadow: 5px 10px #888888; }
-      .skills__gallery-card:active {
-        transform: translateY(0);
-        box-shadow: none; }
-      .skills__gallery-card--html {
-        background-image: url(/Img/2000px-HTML5_logo_and_wordmark.svg.png); }
-      .skills__gallery-card--css {
-        background-image: url(/Img/CSS3_logo_and_wordmark.svg.png); }
-      .skills__gallery-card--javascript {
-        background-image: url(/Img/javascript-logo.png); }
-      .skills__gallery-card--gulp {
-        background-image: url(/Img/gulp-logo.png); }
-      .skills__gallery-card--bootstrap {
-        background-image: url(/Img/bootstrap-logo-png-assets-img-logo-bootstrap-png-200.png); }
-      .skills__gallery-card--git {
-        background-image: url(/Img//git-logo1-348x350-c.png); }
-      .skills__gallery-card--sass {
-        background-image: url(/Img/sass-logo.png); }
-
-.projects {
-  height: 45rem;
-  background-color: #2fbdff;
-  clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 95%, 0 85%);
-  transform: translateY(-25rem);
-  z-index: 2;
-  position: relative;
-  padding-top: 15rem; }
-  .projects__gallery {
-    display: flex;
-    justify-content: space-around; }
-    .projects__galleryTiles {
-      display: flex;
-      justify-content: center;
-      align-content: center;
-      width: 20rem;
-      height: 16rem;
-      border-radius: .5rem;
-      background-color: red; }
-      .projects__galleryTilesText {
-        display: block;
-        color: white;
-        font-size: 5rem; }
-        .projects__galleryTilesText:hover {
-          color: black;
-          display: none; }
-
-.footer {
-  height: 25rem;
-  background-color: #30463f;
-  clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 95%, 0 85%);
-  transform: translateY(-33rem);
-  z-index: 1;
-  position: relative;
-  padding: 80px 15px;
+.s-icon {
+  border-radius: 50%;
+  background-color: blue;
+  border: solid 2px red;
+  height: 6rem;
+  width: 6rem;
   display: flex;
-  justify-content: space-between; }
-  .footer__left {
-    width: 50%; }
-    .footer__left-heading {
-      text-transform: uppercase;
-      margin-left: 1rem;
-      color: white;
-      font-size: 3rem;
-      transform: rotate(1.5deg); }
-    .footer__left-content p {
-      color: whitesmoke;
-      transform: rotate(1.5deg); }
+  justify-content: center;
+  align-items: center; }
+  .s-icon:not(last-child) {
+    margin-right: 4rem; }
