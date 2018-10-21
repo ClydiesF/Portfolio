@@ -208,7 +208,7 @@ p {
       font-size: 2rem;
       margin-bottom: 3rem; }
   .footer__signature {
-    background-image: linear-gradient(to bottom right, rgba(63, 146, 191, 0.6), rgba(63, 191, 178, 0.6)), url(../Img/osman-rana-267042-unsplash.jpg);
+    background-image: linear-gradient(to bottom right, rgba(63, 146, 191, 0.6), rgba(63, 191, 178, 0.6)), url(../img/osman-rana-267042-unsplash.jpg);
     height: 9rem;
     display: flex;
     justify-content: center;
@@ -365,7 +365,7 @@ html {
 
 .header {
   height: 65vh;
-  background-image: linear-gradient(to bottom right, rgba(63, 146, 191, 0.6), rgba(63, 191, 178, 0.6)), url(../Img/osman-rana-267042-unsplash.jpg);
+  background-image: linear-gradient(to bottom right, rgba(63, 146, 191, 0.6), rgba(63, 191, 178, 0.6)), url(../img/osman-rana-267042-unsplash.jpg);
   background-size: cover;
   background-position: top;
   padding: 10px 15px;
